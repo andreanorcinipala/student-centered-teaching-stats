@@ -112,13 +112,13 @@ export default function CoinFlip() {
               className="h-full bg-brand-500 transition-all duration-300 flex items-center justify-center text-xs text-white font-medium"
               style={{ width: `${headsRate}%` }}
             >
-              {headsRate > 15 ? "H" : ""}
+              {headsRate > 15 ? "Heads" : ""}
             </div>
             <div
               className="h-full bg-brand-200 transition-all duration-300 flex items-center justify-center text-xs text-brand-700 font-medium"
               style={{ width: `${100 - headsRate}%` }}
             >
-              {headsRate < 85 ? "T" : ""}
+              {headsRate < 85 ? "Tails" : ""}
             </div>
           </div>
 

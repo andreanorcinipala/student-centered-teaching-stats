@@ -7,6 +7,7 @@ import { nullHypothesisContent } from "../../../data/null-hypothesis";
 import CoinFlip from "../../../components/interactives/CoinFlip";
 import DrugTrial from "../../../components/interactives/DrugTrial";
 import PowerAnalysis from "../../../components/interactives/PowerAnalysis";
+import CustomExample from "../../../components/CustomExample";
 
 type Difficulty = "beginner" | "intermediate" | "advanced";
 
@@ -141,6 +142,14 @@ export default function NullHypothesisPage() {
             </p>
           </div>
           <InteractiveSection difficulty={difficulty} />
+        </section>
+
+        {/* Custom Example */}
+        <section className="bg-white rounded-2xl border border-brand-100 shadow-sm p-6 md:p-8">
+          <h2 className="font-serif text-2xl text-brand-800 mb-4">
+            Make It Personal
+          </h2>
+          <CustomExample topic="Null Hypothesis" difficulty={difficulty} />
         </section>
       </main>
 
