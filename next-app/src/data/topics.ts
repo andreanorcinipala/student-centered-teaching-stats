@@ -13,7 +13,7 @@ export const topics: Topic[] = [
     description:
       "The starting assumption that nothing is happening. Learn how we test claims by trying to reject this baseline.",
     icon: "null-hypothesis",
-    status: "coming-soon",
+    status: "live",
   },
   {
     id: "probability",
