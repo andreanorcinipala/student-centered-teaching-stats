@@ -21,7 +21,7 @@ export const topics: Topic[] = [
     description:
       "The language of uncertainty. Understand how likely events are and why it matters for every statistical test.",
     icon: "probability",
-    status: "coming-soon",
+    status: "live",
   },
   {
     id: "linear-regression",
