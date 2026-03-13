@@ -29,7 +29,7 @@ export const topics: Topic[] = [
     description:
       "Fitting a straight line through data. The workhorse of statistical modeling and prediction.",
     icon: "linear-regression",
-    status: "coming-soon",
+    status: "live",
   },
   {
     id: "logistic-regression",
@@ -37,7 +37,7 @@ export const topics: Topic[] = [
     description:
       "When the outcome is yes or no. Model the probability of binary events using the S-shaped curve.",
     icon: "logistic-regression",
-    status: "coming-soon",
+    status: "live",
   },
   {
     id: "poisson-regression",
