@@ -56,6 +56,14 @@ export const topics: Topic[] = [
     status: "live",
   },
   {
+    id: "bayes-theorem",
+    title: "Bayes' Theorem",
+    description:
+      "Updating beliefs with evidence. From medical testing to machine learning, this formula changes how we think about probability.",
+    icon: "bayes-theorem",
+    status: "live",
+  },
+  {
     id: "poisson-regression",
     title: "Poisson Regression",
     description:

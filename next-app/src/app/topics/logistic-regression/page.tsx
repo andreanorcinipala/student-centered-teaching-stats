@@ -8,6 +8,7 @@ import PassFailPredictor from "../../../components/interactives/PassFailPredicto
 import LogisticModelSim from "../../../components/interactives/LogisticModelSim";
 import ROCExplorer from "../../../components/interactives/ROCExplorer";
 import CustomExample from "../../../components/CustomExample";
+import KeyTermCard from "../../../components/KeyTermCard";
 
 type Difficulty = "beginner" | "intermediate" | "advanced";
 const levels: Difficulty[] = ["beginner", "intermediate", "advanced"];
@@ -70,10 +71,7 @@ export default function LogisticRegressionPage() {
           <h2 className="font-serif text-2xl text-brand-800 mb-4">Key Terms</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {content.keyTerms.map((kt) => (
-              <div key={kt.term} className="bg-brand-50 rounded-xl p-4 border border-brand-100">
-                <h4 className="font-medium text-brand-800 text-sm mb-1">{kt.term}</h4>
-                <p className="text-xs text-brand-600 leading-relaxed">{kt.definition}</p>
-              </div>
+              <KeyTermCard key={kt.term} term={kt.term} definition={kt.definition} />
             ))}
           </div>
         </section>

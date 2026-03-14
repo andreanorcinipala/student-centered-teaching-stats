@@ -117,6 +117,16 @@ export default function TopicIcon({ name }: { name: string }) {
           <circle cx="24" cy="32" r="2.5" fill="currentColor" stroke="none" />
         </svg>
       );
+    case "bayes-theorem":
+      return (
+        <svg className={cls} viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+          <circle cx="24" cy="24" r="16" />
+          <circle cx="24" cy="24" r="8" opacity="0.4" />
+          <line x1="24" y1="8" x2="24" y2="40" strokeWidth="1.5" strokeDasharray="3 3" opacity="0.3" />
+          <path d="M16 30 Q20 18, 24 16 Q28 14, 32 18" strokeWidth="2" fill="none" />
+          <text x="24" y="36" textAnchor="middle" fontSize="8" fontWeight="bold" fill="currentColor" stroke="none">P</text>
+        </svg>
+      );
     default:
       return null;
   }

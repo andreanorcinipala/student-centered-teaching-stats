@@ -3,10 +3,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import TopicIcon from "../../../components/TopicIcon";
-import { multivariableLinearRegressionContent } from "../../../data/multivariable-linear-regression";
-import PredictorToggle from "../../../components/interactives/PredictorToggle";
-import ConfoundingSim from "../../../components/interactives/ConfoundingSim";
-import ModelSelectionLab from "../../../components/interactives/ModelSelectionLab";
+import { bayesTheoremContent } from "../../../data/bayes-theorem";
+import TestResultCalc from "../../../components/interactives/TestResultCalc";
+import BayesFormula from "../../../components/interactives/BayesFormula";
+import PriorPosteriorLab from "../../../components/interactives/PriorPosteriorLab";
 import CustomExample from "../../../components/CustomExample";
 import KeyTermCard from "../../../components/KeyTermCard";
 
@@ -15,15 +15,15 @@ const levels: Difficulty[] = ["beginner", "intermediate", "advanced"];
 
 function InteractiveSection({ difficulty }: { difficulty: Difficulty }) {
   switch (difficulty) {
-    case "beginner": return <PredictorToggle />;
-    case "intermediate": return <ConfoundingSim />;
-    case "advanced": return <ModelSelectionLab />;
+    case "beginner": return <TestResultCalc />;
+    case "intermediate": return <BayesFormula />;
+    case "advanced": return <PriorPosteriorLab />;
   }
 }
 
-export default function MultivariableLinearRegressionPage() {
+export default function BayesTheoremPage() {
   const [difficulty, setDifficulty] = useState<Difficulty>("beginner");
-  const content = multivariableLinearRegressionContent[difficulty];
+  const content = bayesTheoremContent[difficulty];
 
   return (
     <div className="min-h-screen bg-brand-50 text-brand-900">
@@ -36,10 +36,10 @@ export default function MultivariableLinearRegressionPage() {
       <main className="max-w-4xl mx-auto px-6 py-10 space-y-10">
         <div className="text-center space-y-4">
           <div className="w-28 h-28 rounded-2xl bg-white border border-brand-100 shadow-sm flex items-center justify-center mx-auto">
-            <div className="scale-[2]"><TopicIcon name="multivariable-linear" /></div>
+            <div className="scale-[2]"><TopicIcon name="bayes-theorem" /></div>
           </div>
-          <h1 className="font-serif text-4xl md:text-5xl text-brand-800">Multivariable Linear Regression</h1>
-          <p className="text-brand-500 text-lg max-w-xl mx-auto">Multiple predictors, one outcome. Isolating the effect of each factor.</p>
+          <h1 className="font-serif text-4xl md:text-5xl text-brand-800">Bayes&apos; Theorem</h1>
+          <p className="text-brand-500 text-lg max-w-xl mx-auto">Updating beliefs with evidence. The bridge between prior knowledge and new data.</p>
         </div>
 
         <div className="flex items-center justify-center gap-2">
@@ -86,7 +86,7 @@ export default function MultivariableLinearRegressionPage() {
 
         <section className="bg-white rounded-2xl border border-brand-100 shadow-sm p-6 md:p-8">
           <h2 className="font-serif text-2xl text-brand-800 mb-4">Make It Personal</h2>
-          <CustomExample topic="Multivariable Linear Regression" difficulty={difficulty} />
+          <CustomExample topic="Bayes' Theorem" difficulty={difficulty} />
         </section>
       </main>
 
