@@ -50,6 +50,37 @@ export default function TopicIcon({ name }: { name: string }) {
           <line x1="6" y1="36" x2="40" y2="36" strokeDasharray="3 3" strokeWidth="1" opacity="0.4" />
         </svg>
       );
+    case "multivariable-linear":
+      return (
+        <svg className={cls} viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+          <line x1="8" y1="40" x2="40" y2="40" />
+          <line x1="8" y1="8" x2="8" y2="40" />
+          <line x1="10" y1="34" x2="38" y2="14" strokeWidth="2" />
+          <line x1="10" y1="30" x2="38" y2="18" strokeWidth="1.5" strokeDasharray="4 2" opacity="0.5" />
+          <line x1="10" y1="38" x2="38" y2="10" strokeWidth="1.5" strokeDasharray="4 2" opacity="0.5" />
+          <circle cx="15" cy="32" r="2" fill="currentColor" stroke="none" />
+          <circle cx="20" cy="27" r="2" fill="currentColor" stroke="none" />
+          <circle cx="26" cy="23" r="2" fill="currentColor" stroke="none" />
+          <circle cx="32" cy="18" r="2" fill="currentColor" stroke="none" />
+          <circle cx="18" cy="34" r="2" fill="#5c8a7e" stroke="none" opacity="0.5" />
+          <circle cx="28" cy="20" r="2" fill="#5c8a7e" stroke="none" opacity="0.5" />
+        </svg>
+      );
+    case "multivariable-logistic":
+      return (
+        <svg className={cls} viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+          <line x1="8" y1="40" x2="40" y2="40" />
+          <line x1="8" y1="8" x2="8" y2="40" />
+          <path d="M10 36 C16 36, 20 35, 24 24 C28 13, 32 12, 38 12" strokeWidth="2" />
+          <path d="M10 34 C14 34, 18 32, 22 24 C26 16, 30 14, 38 14" strokeWidth="1.5" strokeDasharray="4 2" opacity="0.5" />
+          <circle cx="14" cy="35" r="1.5" fill="currentColor" stroke="none" />
+          <circle cx="22" cy="28" r="1.5" fill="currentColor" stroke="none" />
+          <circle cx="30" cy="14" r="1.5" fill="currentColor" stroke="none" />
+          <circle cx="18" cy="33" r="1.5" fill="#5c8a7e" stroke="none" opacity="0.5" />
+          <circle cx="26" cy="18" r="1.5" fill="#5c8a7e" stroke="none" opacity="0.5" />
+          <circle cx="34" cy="12" r="1.5" fill="#5c8a7e" stroke="none" opacity="0.5" />
+        </svg>
+      );
     case "poisson-regression":
       return (
         <svg className={cls} viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">

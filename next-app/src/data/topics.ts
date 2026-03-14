@@ -40,6 +40,22 @@ export const topics: Topic[] = [
     status: "live",
   },
   {
+    id: "multivariable-linear-regression",
+    title: "Multivariable Linear Regression",
+    description:
+      "Multiple predictors, one outcome. Learn how to isolate each variable's effect while controlling for the rest.",
+    icon: "multivariable-linear",
+    status: "live",
+  },
+  {
+    id: "multivariable-logistic-regression",
+    title: "Multivariable Logistic Regression",
+    description:
+      "Predicting yes/no outcomes with multiple predictors. Adjusted odds ratios, confounding, and model building.",
+    icon: "multivariable-logistic",
+    status: "live",
+  },
+  {
     id: "poisson-regression",
     title: "Poisson Regression",
     description:
